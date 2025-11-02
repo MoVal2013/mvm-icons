@@ -1,0 +1,8 @@
+THEME → FILENAME
+Trunk or Treat → trunk_or_treat.png
+Candy → candy.png
+Haunted House → haunted_house.png
+Fall Festival → fall_festival_cornucopia.png
+Pumpkin Patch → pumpkin_patch.png
+Halloween Decorations → halloween_decorations.png
+Dia de los Muertos → dia_de_los_muertos.png
