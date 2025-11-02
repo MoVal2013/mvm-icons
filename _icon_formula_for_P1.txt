@@ -1,0 +1,19 @@
+Paste this in P1 (IconURL column header cell):
+
+=ARRAYFORMULA(
+ IF(ROW(I:I)=1,"IconURL",
+  IFS(
+    I:I="Trunk or Treat",$Q$1&"trunk_or_treat.png",
+    I:I="Haunted House",$Q$1&"haunted_house.png",
+    I:I="Fall Festival",$Q$1&"fall_festival_cornucopia.png",
+    I:I="Pumpkin Patch",$Q$1&"pumpkin_patch.png",
+    I:I="Halloween Decorations",$Q$1&"halloween_decorations.png",
+    I:I="Candy",$Q$1&"candy_corn.png",
+    I:I="Dia de los Muertos",$Q$1&"dia_de_los_muertos_skull.png",
+    TRUE,$Q$1&"fallback_leaf.png"
+  )
+ )
+)
+
+Set cell Q1 to your public icon base URL (must end with '/'), for example:
+https://yourdomain.com/mvm-icons/   or   https://raw.githubusercontent.com/<user>/<repo>/main/icons/
